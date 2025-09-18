@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            height: 100vh;
+        }
+
+
+        header{
+             background-color: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color:black;
+            position: static;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .menu{
+            background-color: #343a40;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+
+        }
+
+        .nav-item{
+            display: inline-block;
+            padding: 8px 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .nav-item:hover {
+            background-color: #007bff;
+            color: yellow;
+        }
+
+        img{
+            align-items: center;
+            width: 100px;
+        }
+
+        .flex-item {
+        background-color: #184dc0;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin: 2px;
+        width: 100%;
+        padding: 200px 150px;
+        
+        }
+
+        .flex-container{
+            display: flex;
+            gap: 20px;
+        }
+    
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/task_3/images/mew.png">
+        <nav class="menu">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+
+    
+    </header>
+
+    <div class="flex-container">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+    </div>
+    
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            height: 100vh;
+        }
+
+
+        header{
+            background-color: #343a40;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color:black;
+            position: static;
+        }
+
+        .menu{
+            background-color: #343a40;
+            padding: 10px;
+            border-radius: 5px;
+
+        }
+
+        .nav-item{
+            display: inline-block;
+            padding: 8px 16px;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .nav-item:hover {
+            background-color: #007bff;
+            color: yellow;
+        }
+
+
+
+        footer{
+            background-color: #343a40;
+            padding: 50px;
+            margin: 20px 0;
+            border-radius: 8px;
+            color:black;
+            position: sticky;
+            top: 0;
+
+        }
+
+        .main{
+            height: 800px;
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .grid-sidebar {
+            grid-area: sidebar;
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+    
+        .grid-main {
+            grid-area: main;
+            background-color: white;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p{
+            color:aliceblue
+        }
+        
+
+
+    
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Contact</a>
+        </nav>
+    
+    </header>
+
+    
+    <aside class="grid-sidebar">
+            <h4>Navigation</h4>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+    </aside>
+    
+    <main class="grid-main">
+            <h4>Main Content</h4>
+            <p>This layout uses CSS Grid template areas to create a classic website structure. The grid areas are defined as:</p>
+            <ul>
+                <li><strong>header header header</strong> - spans all 3 columns</li>
+                <li><strong>sidebar main main</strong> - sidebar takes 1 column, main takes 2</li>
+                <li><strong>footer footer footer</strong> - spans all 3 columns</li>
+            </ul>
+            <p>This approach makes layouts incredibly intuitive and easy to modify!</p>
+        </main>
+
+    <footer>
+        <p>© Copyright wealth 2025.</p>
+
+    </footer>
+    
+</body>
+</html>
